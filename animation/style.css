@@ -1,0 +1,54 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px blue solid;
+  transform: translate(-50%, -50%);
+}
+.main div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: blue;
+  transform: translate(-50%, -50%);
+}
+.hh {
+  width: 8px;
+  height: 80px;
+  background-color: blue;
+  transform-origin: 50% 0;
+  transform: translate(-50%) rotate(180deg);
+  animation: clock 43200s linear infinite;
+}
+.mm {
+  width: 6px;
+  height: 100px;
+  background-color: black;
+  transform: translate(-50%) rotate(180deg);
+  transform-origin: 50% 0;
+  animation: clock 3600s linear infinite;
+}
+.ss {
+  width: 4px;
+  height: 120px;
+  background-color: red;
+  transform: translate(-50%) rotate(180deg);
+  transform-origin: 50% 0;
+  animation: clock 60s linear infinite;
+}
+@keyframes clock {
+  0% {
+    transform: translate(-50%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-50%) rotate(540deg);
+  }
+}
